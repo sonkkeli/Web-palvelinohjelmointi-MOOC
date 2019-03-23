@@ -1,0 +1,884 @@
+15:27:24.301 [TestRunner thread] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class simplebanking.SimpleBankingTest]
+15:27:24.310 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:27:24.318 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:27:24.341 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [simplebanking.SimpleBankingTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:27:24.354 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [simplebanking.SimpleBankingTest], using SpringBootContextLoader
+15:27:24.357 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [simplebanking.SimpleBankingTest]: class path resource [simplebanking/SimpleBankingTest-context.xml] does not exist
+15:27:24.358 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [simplebanking.SimpleBankingTest]: class path resource [simplebanking/SimpleBankingTestContext.groovy] does not exist
+15:27:24.358 [TestRunner thread] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [simplebanking.SimpleBankingTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:27:24.359 [TestRunner thread] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [simplebanking.SimpleBankingTest]: SimpleBankingTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:27:24.487 [TestRunner thread] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\sonja\NetBeansProjects\mooc-web-palvelinohjelmointi-java-19\osa03-Osa03_02.SimpleBanking\target\classes\simplebanking\SimpleBankingApplication.class]
+15:27:24.488 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration simplebanking.SimpleBankingApplication for test class simplebanking.SimpleBankingTest
+15:27:24.571 [TestRunner thread] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [simplebanking.SimpleBankingTest]: using defaults.
+15:27:24.571 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
+15:27:24.585 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@629b24d6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70468716, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ae6e02b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@10049641, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b82bd03, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6f38f152, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6252b326, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@56d097b3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@688452cf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@401e8cec, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3722cc4a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@659db812]
+15:27:24.588 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [simplebanking.SimpleBankingTest]
+15:27:24.588 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [simplebanking.SimpleBankingTest]
+15:27:24.589 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [simplebanking.SimpleBankingTest]
+15:27:24.589 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [simplebanking.SimpleBankingTest]
+15:27:24.590 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [simplebanking.SimpleBankingTest]
+15:27:24.590 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [simplebanking.SimpleBankingTest]
+15:27:24.593 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@395b5251 testClass = SimpleBankingTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@34fd11bb testClass = SimpleBankingTest, locations = '{}', classes = '{class simplebanking.SimpleBankingApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@728b4ce0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@54ae616e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@287070e7, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4b9204e6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+15:27:24.593 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [simplebanking.SimpleBankingTest]
+15:27:24.593 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [simplebanking.SimpleBankingTest]
+15:27:24.654 [TestRunner thread] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@395b5251 testClass = SimpleBankingTest, testInstance = simplebanking.SimpleBankingTest@394e85e3, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@34fd11bb testClass = SimpleBankingTest, locations = '{}', classes = '{class simplebanking.SimpleBankingApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@728b4ce0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@54ae616e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@287070e7, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4b9204e6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]].
+15:27:24.677 [TestRunner thread] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 15:27:24.899  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : Starting SimpleBankingTest on LAPTOP-0AUPKKC1 with PID 23840 (started by sonja in C:\Users\sonja\NetBeansProjects\mooc-web-palvelinohjelmointi-java-19\osa03-Osa03_02.SimpleBanking)
+2019-03-23 15:27:24.899  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : The following profiles are active: test
+2019-03-23 15:27:25.372  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 15:27:25.437  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 2 repository interfaces.
+2019-03-23 15:27:25.763  INFO 23840 --- [stRunner thread] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b47db3c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 15:27:26.236  INFO 23840 --- [stRunner thread] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-03-23 15:27:26.257  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 15:27:26.258  INFO 23840 --- [stRunner thread] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 15:27:26.267  INFO 23840 --- [stRunner thread] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\leJOS EV3\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\Git\cmd;C:\Users\sonja\AppData\Local\Microsoft\WindowsApps;C:\Users\sonja\AppData\Roaming\npm;C:\Program Files\JetBrains\PhpStorm 2018.3.5\bin;;C:\Users\sonja\AppData\Local\Programs\Microsoft VS Code\bin;.]
+2019-03-23 15:27:26.396  INFO 23840 --- [stRunner thread] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-23 15:27:26.396  INFO 23840 --- [stRunner thread] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1480 ms
+2019-03-23 15:27:26.668  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-23 15:27:26.815  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-23 15:27:26.871  INFO 23840 --- [stRunner thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-23 15:27:26.936  INFO 23840 --- [stRunner thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-23 15:27:26.937  INFO 23840 --- [stRunner thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-23 15:27:27.084  INFO 23840 --- [stRunner thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-23 15:27:27.227  INFO 23840 --- [stRunner thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-23 15:27:27.974  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:28.585  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:28.638  WARN 23840 --- [stRunner thread] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-23 15:27:29.006  INFO 23840 --- [stRunner thread] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-23 15:27:29.071  WARN 23840 --- [stRunner thread] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder;
+2019-03-23 15:27:29.071  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:29.071  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:29.074  INFO 23840 --- [stRunner thread] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-03-23 15:27:29.074  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-23 15:27:29.076  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-23 15:27:29.077  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-23 15:27:29.085  INFO 23840 --- [stRunner thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-23 15:27:29.087 ERROR 23840 --- [stRunner thread] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder; but it does not exist. Its class, com.google.gson.GsonBuilder, is available from the following locations:
+
+    jar:file:/C:/Users/sonja/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/com/google/gson/GsonBuilder.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/sonja/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of com.google.gson.GsonBuilder
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 15:27:29.111  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : Starting SimpleBankingTest on LAPTOP-0AUPKKC1 with PID 23840 (started by sonja in C:\Users\sonja\NetBeansProjects\mooc-web-palvelinohjelmointi-java-19\osa03-Osa03_02.SimpleBanking)
+2019-03-23 15:27:29.111  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : The following profiles are active: test
+2019-03-23 15:27:29.232  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 15:27:29.246  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 repository interfaces.
+2019-03-23 15:27:29.305  INFO 23840 --- [stRunner thread] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b47db3c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 15:27:29.411  INFO 23840 --- [stRunner thread] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-03-23 15:27:29.412  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 15:27:29.412  INFO 23840 --- [stRunner thread] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 15:27:29.445  INFO 23840 --- [stRunner thread] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-03-23 15:27:29.445  INFO 23840 --- [stRunner thread] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 332 ms
+2019-03-23 15:27:29.559  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-03-23 15:27:29.561  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-03-23 15:27:29.576  INFO 23840 --- [stRunner thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-23 15:27:29.582  INFO 23840 --- [stRunner thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-23 15:27:29.632  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:29.865  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:29.876  WARN 23840 --- [stRunner thread] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-23 15:27:29.958  INFO 23840 --- [stRunner thread] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-23 15:27:30.001  WARN 23840 --- [stRunner thread] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+2019-03-23 15:27:30.001  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:30.002  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:30.002  INFO 23840 --- [stRunner thread] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-03-23 15:27:30.002  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-03-23 15:27:30.004  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-03-23 15:27:30.005  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-23 15:27:30.009  INFO 23840 --- [stRunner thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-23 15:27:30.014 ERROR 23840 --- [stRunner thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) [spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 
+	... 59 common frames omitted
+
+2019-03-23 15:27:30.015 ERROR 23840 --- [stRunner thread] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@10049641] to prepare test instance [simplebanking.SimpleBankingTest@394e85e3]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder;
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder;
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder;
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 46 common frames omitted
+Caused by: java.lang.NoSuchMethodError: com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder;
+	at java.lang.invoke.MethodHandleNatives.resolve(Native Method) ~[na:1.8.0_191]
+	at java.lang.invoke.MemberName$Factory.resolve(MemberName.java:975) ~[na:1.8.0_191]
+	at java.lang.invoke.MemberName$Factory.resolveOrFail(MemberName.java:1000) ~[na:1.8.0_191]
+	at java.lang.invoke.MethodHandles$Lookup.resolveOrFail(MethodHandles.java:1394) ~[na:1.8.0_191]
+	at java.lang.invoke.MethodHandles$Lookup.linkMethodHandleConstant(MethodHandles.java:1750) ~[na:1.8.0_191]
+	at java.lang.invoke.MethodHandleNatives.linkMethodHandleConstant(MethodHandleNatives.java:477) ~[na:1.8.0_191]
+	... 60 common frames omitted
+
+2019-03-23 15:27:30.019  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [simplebanking.SimpleBankingTest], using SpringBootContextLoader
+2019-03-23 15:27:30.020  INFO 23840 --- [stRunner thread] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [simplebanking.SimpleBankingTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-23 15:27:30.020  INFO 23840 --- [stRunner thread] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [simplebanking.SimpleBankingTest]: SimpleBankingTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-23 15:27:30.021  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration simplebanking.SimpleBankingApplication for test class simplebanking.SimpleBankingTest
+2019-03-23 15:27:30.021  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
+2019-03-23 15:27:30.022  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fcffc85, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a541e9b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2cf18bd2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e07369f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1eccc60e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@14e6b38a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34e905df, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@731d6e13, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@b193ac8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a42a2c2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@56799da8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4e0c1c82]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 15:27:30.045  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : Starting SimpleBankingTest on LAPTOP-0AUPKKC1 with PID 23840 (started by sonja in C:\Users\sonja\NetBeansProjects\mooc-web-palvelinohjelmointi-java-19\osa03-Osa03_02.SimpleBanking)
+2019-03-23 15:27:30.045  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : The following profiles are active: test
+2019-03-23 15:27:30.156  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 15:27:30.170  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 repository interfaces.
+2019-03-23 15:27:30.226  INFO 23840 --- [stRunner thread] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b47db3c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 15:27:30.326  INFO 23840 --- [stRunner thread] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-03-23 15:27:30.327  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 15:27:30.327  INFO 23840 --- [stRunner thread] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 15:27:30.346  INFO 23840 --- [stRunner thread] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-03-23 15:27:30.346  INFO 23840 --- [stRunner thread] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 300 ms
+2019-03-23 15:27:30.458  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-03-23 15:27:30.459  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-03-23 15:27:30.475  INFO 23840 --- [stRunner thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-23 15:27:30.481  INFO 23840 --- [stRunner thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-23 15:27:30.526  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:30.753  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:30.764  WARN 23840 --- [stRunner thread] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-23 15:27:30.852  INFO 23840 --- [stRunner thread] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-23 15:27:30.895  WARN 23840 --- [stRunner thread] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+2019-03-23 15:27:30.895  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:30.896  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:30.896  INFO 23840 --- [stRunner thread] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-03-23 15:27:30.896  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-03-23 15:27:30.899  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-03-23 15:27:30.899  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-23 15:27:30.904  INFO 23840 --- [stRunner thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-23 15:27:30.905 ERROR 23840 --- [stRunner thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) [spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 46 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 
+	... 60 common frames omitted
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 15:27:30.925  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : Starting SimpleBankingTest on LAPTOP-0AUPKKC1 with PID 23840 (started by sonja in C:\Users\sonja\NetBeansProjects\mooc-web-palvelinohjelmointi-java-19\osa03-Osa03_02.SimpleBanking)
+2019-03-23 15:27:30.925  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : The following profiles are active: test
+2019-03-23 15:27:31.034  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 15:27:31.047  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 2 repository interfaces.
+2019-03-23 15:27:31.098  INFO 23840 --- [stRunner thread] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b47db3c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 15:27:31.194  INFO 23840 --- [stRunner thread] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-03-23 15:27:31.195  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 15:27:31.195  INFO 23840 --- [stRunner thread] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 15:27:31.217  INFO 23840 --- [stRunner thread] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-03-23 15:27:31.217  INFO 23840 --- [stRunner thread] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 291 ms
+2019-03-23 15:27:31.319  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2019-03-23 15:27:31.321  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2019-03-23 15:27:31.334  INFO 23840 --- [stRunner thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-23 15:27:31.339  INFO 23840 --- [stRunner thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-23 15:27:31.380  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:31.601  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:31.610  WARN 23840 --- [stRunner thread] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-23 15:27:31.694  INFO 23840 --- [stRunner thread] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-23 15:27:31.735  WARN 23840 --- [stRunner thread] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+2019-03-23 15:27:31.736  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:31.736  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:31.736  INFO 23840 --- [stRunner thread] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-03-23 15:27:31.736  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2019-03-23 15:27:31.739  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2019-03-23 15:27:31.740  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-23 15:27:31.743  INFO 23840 --- [stRunner thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-23 15:27:31.744 ERROR 23840 --- [stRunner thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) [spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 
+	... 59 common frames omitted
+
+2019-03-23 15:27:31.745 ERROR 23840 --- [stRunner thread] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e07369f] to prepare test instance [simplebanking.SimpleBankingTest@4eaaa431]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 46 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 
+	... 60 common frames omitted
+
+2019-03-23 15:27:31.746  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [simplebanking.SimpleBankingTest], using SpringBootContextLoader
+2019-03-23 15:27:31.746  INFO 23840 --- [stRunner thread] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [simplebanking.SimpleBankingTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-23 15:27:31.746  INFO 23840 --- [stRunner thread] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [simplebanking.SimpleBankingTest]: SimpleBankingTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-23 15:27:31.748  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration simplebanking.SimpleBankingApplication for test class simplebanking.SimpleBankingTest
+2019-03-23 15:27:31.748  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
+2019-03-23 15:27:31.748  INFO 23840 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@579537f8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63b73558, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@235711d6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@38c7b2a1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@469368b6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c5488c9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@716e334, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2410bcd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f4a05eb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6760cc0b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@57df9c90, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5dcaeac5]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 15:27:31.769  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : Starting SimpleBankingTest on LAPTOP-0AUPKKC1 with PID 23840 (started by sonja in C:\Users\sonja\NetBeansProjects\mooc-web-palvelinohjelmointi-java-19\osa03-Osa03_02.SimpleBanking)
+2019-03-23 15:27:31.769  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : The following profiles are active: test
+2019-03-23 15:27:31.871  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 15:27:31.884  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 2 repository interfaces.
+2019-03-23 15:27:31.933  INFO 23840 --- [stRunner thread] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b47db3c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 15:27:32.022  INFO 23840 --- [stRunner thread] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-03-23 15:27:32.023  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 15:27:32.023  INFO 23840 --- [stRunner thread] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 15:27:32.044  INFO 23840 --- [stRunner thread] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-03-23 15:27:32.044  INFO 23840 --- [stRunner thread] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 274 ms
+2019-03-23 15:27:32.146  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2019-03-23 15:27:32.147  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2019-03-23 15:27:32.160  INFO 23840 --- [stRunner thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-23 15:27:32.165  INFO 23840 --- [stRunner thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-23 15:27:32.203  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:32.436  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:32.446  WARN 23840 --- [stRunner thread] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-23 15:27:32.526  INFO 23840 --- [stRunner thread] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-23 15:27:32.569  WARN 23840 --- [stRunner thread] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+2019-03-23 15:27:32.569  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:32.569  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:32.570  INFO 23840 --- [stRunner thread] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-03-23 15:27:32.570  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2019-03-23 15:27:32.573  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2019-03-23 15:27:32.573  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-23 15:27:32.577  INFO 23840 --- [stRunner thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-23 15:27:32.577 ERROR 23840 --- [stRunner thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) [spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 46 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 
+	... 60 common frames omitted
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 15:27:32.598  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : Starting SimpleBankingTest on LAPTOP-0AUPKKC1 with PID 23840 (started by sonja in C:\Users\sonja\NetBeansProjects\mooc-web-palvelinohjelmointi-java-19\osa03-Osa03_02.SimpleBanking)
+2019-03-23 15:27:32.598  INFO 23840 --- [stRunner thread] simplebanking.SimpleBankingTest          : The following profiles are active: test
+2019-03-23 15:27:32.701  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 15:27:32.714  INFO 23840 --- [stRunner thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 2 repository interfaces.
+2019-03-23 15:27:32.762  INFO 23840 --- [stRunner thread] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b47db3c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 15:27:32.855  INFO 23840 --- [stRunner thread] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-03-23 15:27:32.856  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 15:27:32.856  INFO 23840 --- [stRunner thread] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 15:27:32.877  INFO 23840 --- [stRunner thread] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-03-23 15:27:32.877  INFO 23840 --- [stRunner thread] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 277 ms
+2019-03-23 15:27:32.981  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2019-03-23 15:27:32.982  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2019-03-23 15:27:32.995  INFO 23840 --- [stRunner thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-23 15:27:33.001  INFO 23840 --- [stRunner thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-23 15:27:33.039  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:33.253  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:33.263  WARN 23840 --- [stRunner thread] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-23 15:27:33.344  INFO 23840 --- [stRunner thread] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-03-23 15:27:33.395  WARN 23840 --- [stRunner thread] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+2019-03-23 15:27:33.395  INFO 23840 --- [stRunner thread] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 15:27:33.395  INFO 23840 --- [stRunner thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-23 15:27:33.395  INFO 23840 --- [stRunner thread] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-03-23 15:27:33.395  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2019-03-23 15:27:33.397  INFO 23840 --- [stRunner thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2019-03-23 15:27:33.397  INFO 23840 --- [stRunner thread] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-23 15:27:33.401  INFO 23840 --- [stRunner thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-23 15:27:33.402 ERROR 23840 --- [stRunner thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) [spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 
+	... 59 common frames omitted
+
+2019-03-23 15:27:33.402 ERROR 23840 --- [stRunner thread] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@38c7b2a1] to prepare test instance [simplebanking.SimpleBankingTest@665baafa]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.fluentlenium.adapter.junit.FluentTest$2$1.evaluate(FluentTest.java:55) [fluentlenium-junit-3.7.1.jar:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.runTestCase(TestRunner.java:134) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.doRun(TestRunner.java:89) [tmc-junit-runner-0.2.4.jar:na]
+	at fi.helsinki.cs.tmc.testrunner.TestRunner$TestingRunnable.run(TestRunner.java:70) [tmc-junit-runner-0.2.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gsonBuilder' defined in class path resource [org/springframework/boot/autoconfigure/gson/GsonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.google.gson.GsonBuilder]: Factory method 'gsonBuilder' threw exception; nested exception is java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: 
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer.customize(GsonAutoConfiguration.java:96) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.lambda$gsonBuilder$0(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_191]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.gsonBuilder(GsonAutoConfiguration.java:49) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.CGLIB$gsonBuilder$1(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d$$FastClassBySpringCGLIB$$993e00ea.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$$EnhancerBySpringCGLIB$$f338c74d.gsonBuilder(<generated>) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 46 common frames omitted
+Caused by: java.lang.NoSuchMethodError: 
+	... 60 common frames omitted
+

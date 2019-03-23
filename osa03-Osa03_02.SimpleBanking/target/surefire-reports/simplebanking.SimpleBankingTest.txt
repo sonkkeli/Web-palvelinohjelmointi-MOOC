@@ -1,0 +1,200 @@
+-------------------------------------------------------------------------------
+Test set: simplebanking.SimpleBankingTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 8.596 s <<< FAILURE! - in simplebanking.SimpleBankingTest
+canAddClientWithAccount(simplebanking.SimpleBankingTest)  Time elapsed: 1.98 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+ <"<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Clients and their accounts
+    </title>
+  </head>
+  <body>
+    <h1>
+      Simple Banking
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Client name
+          </th>
+          <th>
+            Account name
+          </th>
+          <th>
+            Balance
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <h2>
+      Add an account to a client
+    </h2>
+    <p>
+      If the account does not exist, it will be created.
+    </p>
+    <form action="/" method="POST">
+      <span>
+        Client name:
+      </span>
+      <br/>
+      <input type="text" name="name"/>
+      <br/>
+      <span>
+        Account iban:
+      </span>
+      <br/>
+      <input type="text" name="iban"/>
+      <br/>
+      <input type="submit" value="Add!"/>
+    </form>
+  </body>
+</html>
+">
+to contain:
+ <"Client: f3c6cd"> 
+	at simplebanking.SimpleBankingTest.addAccountToClient(SimpleBankingTest.java:95)
+	at simplebanking.SimpleBankingTest.addClientAndAccount(SimpleBankingTest.java:82)
+	at simplebanking.SimpleBankingTest.canAddClientWithAccount(SimpleBankingTest.java:37)
+
+clientWithSameNameStoredOnlyOnce(simplebanking.SimpleBankingTest)  Time elapsed: 0.09 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+ <"<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Clients and their accounts
+    </title>
+  </head>
+  <body>
+    <h1>
+      Simple Banking
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Client name
+          </th>
+          <th>
+            Account name
+          </th>
+          <th>
+            Balance
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tbody>
+      </tbody>
+    </table>
+    <h2>
+      Add an account to a client
+    </h2>
+    <p>
+      If the account does not exist, it will be created.
+    </p>
+    <form action="/" method="POST">
+      <span>
+        Client name:
+      </span>
+      <br/>
+      <input type="text" name="name"/>
+      <br/>
+      <span>
+        Account iban:
+      </span>
+      <br/>
+      <input type="text" name="iban"/>
+      <br/>
+      <input type="submit" value="Add!"/>
+    </form>
+  </body>
+</html>
+">
+to contain:
+ <"Client: 6d9453"> 
+	at simplebanking.SimpleBankingTest.addAccountToClient(SimpleBankingTest.java:95)
+	at simplebanking.SimpleBankingTest.addClientAndAccount(SimpleBankingTest.java:82)
+	at simplebanking.SimpleBankingTest.lambda$addClientsAndAccounts$2(SimpleBankingTest.java:78)
+	at simplebanking.SimpleBankingTest.addClientsAndAccounts(SimpleBankingTest.java:78)
+	at simplebanking.SimpleBankingTest.clientWithSameNameStoredOnlyOnce(SimpleBankingTest.java:62)
+
+canAddMultipleClientsWithAccounts(simplebanking.SimpleBankingTest)  Time elapsed: 0.112 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+ <"<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Clients and their accounts
+    </title>
+  </head>
+  <body>
+    <h1>
+      Simple Banking
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Client name
+          </th>
+          <th>
+            Account name
+          </th>
+          <th>
+            Balance
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tbody>
+      </tbody>
+      <tbody>
+      </tbody>
+    </table>
+    <h2>
+      Add an account to a client
+    </h2>
+    <p>
+      If the account does not exist, it will be created.
+    </p>
+    <form action="/" method="POST">
+      <span>
+        Client name:
+      </span>
+      <br/>
+      <input type="text" name="name"/>
+      <br/>
+      <span>
+        Account iban:
+      </span>
+      <br/>
+      <input type="text" name="iban"/>
+      <br/>
+      <input type="submit" value="Add!"/>
+    </form>
+  </body>
+</html>
+">
+to contain:
+ <"Client: 1a3f39"> 
+	at simplebanking.SimpleBankingTest.addAccountToClient(SimpleBankingTest.java:95)
+	at simplebanking.SimpleBankingTest.addClientAndAccount(SimpleBankingTest.java:82)
+	at simplebanking.SimpleBankingTest.lambda$addClientsAndAccounts$2(SimpleBankingTest.java:78)
+	at simplebanking.SimpleBankingTest.addClientsAndAccounts(SimpleBankingTest.java:78)
+	at simplebanking.SimpleBankingTest.canAddMultipleClientsWithAccounts(SimpleBankingTest.java:42)
+
