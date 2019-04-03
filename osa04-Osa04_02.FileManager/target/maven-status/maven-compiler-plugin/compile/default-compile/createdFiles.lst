@@ -1,0 +1,4 @@
+filemanager\FileManagerApplication.class
+filemanager\FileObject.class
+filemanager\FileObjectRepository.class
+filemanager\DefaultController.class
