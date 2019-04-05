@@ -45,8 +45,7 @@ public class MovieTest extends org.fluentlenium.adapter.junit.FluentTest {
         assertTrue(pageSource().contains("Uuno Turhapuro"));
         
         find("a", withText("Uuno Turhapuro")).click();
-
-        // this doesnt work for some reason
+        
         find("input[id='add-to-movie']").click();
         
         goTo("http://localhost:" + port + "/movies");
