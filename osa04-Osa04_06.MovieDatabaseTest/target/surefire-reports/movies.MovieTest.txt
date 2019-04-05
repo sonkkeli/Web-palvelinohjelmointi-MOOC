@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: movies.MovieTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.798 s <<< FAILURE! - in movies.MovieTest
+metodinNimi(movies.MovieTest)  Time elapsed: 3.76 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Elements By.cssSelector: a[text='Uuno Turhapuro'] (Lazy Element List) is not present
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-0AUPKKC1', ip: '192.168.0.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+	at movies.MovieTest.metodinNimi(MovieTest.java:47)
+
