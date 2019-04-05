@@ -1,5 +1,6 @@
 package movies;
 
+import static org.fluentlenium.core.filter.FilterConstructor.withText;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
@@ -43,9 +44,9 @@ public class MovieTest extends org.fluentlenium.adapter.junit.FluentTest {
         
         assertTrue(pageSource().contains("Uuno Turhapuro"));
         
-        goTo("http://localhost:" + port + "/actors/1");
-        // find("a[th:text='Uuno Turhapuro']").click();
-                
+        find("a", withText("Uuno Turhapuro")).click();
+
+        // this doesnt work for some reason
         find("input[id='add-to-movie']").click();
         
         goTo("http://localhost:" + port + "/movies");
