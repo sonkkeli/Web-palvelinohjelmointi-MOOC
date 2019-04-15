@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: reservations.ReservationControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.974 s <<< FAILURE! - in reservations.ReservationControllerTest
+getReservationsReturnsReservationsAndView(reservations.ReservationControllerTest)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.AssertionError: Range for response status value 302 expected:<SUCCESSFUL> but was:<REDIRECTION>
+	at reservations.ReservationControllerTest.getReservationsReturnsReservationsAndView(ReservationControllerTest.java:37)
+
+getReservationsReturnsListWithReservationsInDatabase(reservations.ReservationControllerTest)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Range for response status value 302 expected:<SUCCESSFUL> but was:<REDIRECTION>
+	at reservations.ReservationControllerTest.getReservationsReturnsListWithReservationsInDatabase(ReservationControllerTest.java:48)
+

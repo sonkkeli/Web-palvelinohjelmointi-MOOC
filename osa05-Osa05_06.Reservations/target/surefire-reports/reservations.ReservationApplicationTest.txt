@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: reservations.ReservationApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 9.75 s <<< FAILURE! - in reservations.ReservationApplicationTest
+canListReservations(reservations.ReservationApplicationTest)  Time elapsed: 1.544 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://localhost:49323/reservations
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-0AUPKKC1', ip: '86.50.13.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: HtmlUnitDriver
+Caused by: com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://localhost:49323/reservations
+
+canNotAddReservationWithoutLoggingIn(reservations.ReservationApplicationTest)  Time elapsed: 0.103 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://localhost:49323/reservations
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-0AUPKKC1', ip: '86.50.13.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: HtmlUnitDriver
+Caused by: com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://localhost:49323/reservations
+
