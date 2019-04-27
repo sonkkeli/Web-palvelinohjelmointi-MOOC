@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Tasks</title>
+    </head>
+    <body>
+
+        <h2>Tasks</h2>
+        
+        <button onclick="listTasks()">Update tasklist</button>
+        <section id="tasklist"></section>
+        
+        <h2>Add a new task</h2>
+
+<!--        <form th:action="@{/tasks}" method="POST">
+            Task:<br/>
+            <input type="text" name="task"/><br/>            
+            <input type="submit" value="Add"/>
+        </form>
+        -->
+        <input type="text" id="task"/>
+        <button onclick="addTask()">Lähetä!</button>
+        
+        <script th:inline="javascript"> var contextRoot = /*[[@{/}]]*/ '';</script>
+        <script th:src="@{/javascript/tasks.js}" defer></script>
+    </body>
+</html>
