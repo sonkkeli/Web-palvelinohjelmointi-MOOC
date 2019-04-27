@@ -14,18 +14,17 @@ public class CalculationService {
     @Autowired
     private CalculationRepository calculationRepository;
 
-    @Transactional
-    
+    @Transactional    
     @Async
-    public Calculation process(Calculation calc) {
+    public void process(Calculation calc) {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException ex) {
             Logger.getLogger(CalculationService.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         calc.setStatus("PROCESSED");
         calc.setCalculationResult(calc.getContent() + ";" + UUID.randomUUID().toString());
-        return calculationRepository.save(calc);
+        calculationRepository.save(calc);
     }
 }
