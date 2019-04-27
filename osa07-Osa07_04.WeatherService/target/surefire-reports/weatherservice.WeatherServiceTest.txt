@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: weatherservice.WeatherServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 6.664 s <<< FAILURE! - in weatherservice.WeatherServiceTest
+testLocationsCacheEvictedOnAddLocation(weatherservice.WeatherServiceTest)  Time elapsed: 0.874 s  <<< FAILURE!
+java.lang.AssertionError
+	at weatherservice.WeatherServiceTest.testLocationsCacheEvictedOnAddLocation(WeatherServiceTest.java:125)
+
+testLocationCacheEvictedOnCacheFlush(weatherservice.WeatherServiceTest)  Time elapsed: 0.021 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Cannot find cache named 'location' for Builder[public weatherservice.Location weatherservice.LocationService.getOneLocationById(java.lang.Long)] caches=[location] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at weatherservice.WeatherServiceTest.testLocationCacheEvictedOnCacheFlush(WeatherServiceTest.java:167)
+Caused by: java.lang.IllegalArgumentException: Cannot find cache named 'location' for Builder[public weatherservice.Location weatherservice.LocationService.getOneLocationById(java.lang.Long)] caches=[location] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at weatherservice.WeatherServiceTest.testLocationCacheEvictedOnCacheFlush(WeatherServiceTest.java:167)
+
+testSingleLocationCached(weatherservice.WeatherServiceTest)  Time elapsed: 0.02 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Cannot find cache named 'location' for Builder[public weatherservice.Location weatherservice.LocationService.getOneLocationById(java.lang.Long)] caches=[location] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at weatherservice.WeatherServiceTest.testSingleLocationCached(WeatherServiceTest.java:79)
+Caused by: java.lang.IllegalArgumentException: Cannot find cache named 'location' for Builder[public weatherservice.Location weatherservice.LocationService.getOneLocationById(java.lang.Long)] caches=[location] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at weatherservice.WeatherServiceTest.testSingleLocationCached(WeatherServiceTest.java:79)
+
+testLocationCacheEvictedOnAddLocation(weatherservice.WeatherServiceTest)  Time elapsed: 0.016 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Cannot find cache named 'location' for Builder[public weatherservice.Location weatherservice.LocationService.getOneLocationById(java.lang.Long)] caches=[location] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at weatherservice.WeatherServiceTest.testLocationCacheEvictedOnAddLocation(WeatherServiceTest.java:137)
+Caused by: java.lang.IllegalArgumentException: Cannot find cache named 'location' for Builder[public weatherservice.Location weatherservice.LocationService.getOneLocationById(java.lang.Long)] caches=[location] | key='' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='' | sync='false'
+	at weatherservice.WeatherServiceTest.testLocationCacheEvictedOnAddLocation(WeatherServiceTest.java:137)
+
